@@ -84,4 +84,4 @@ if __name__ == "__main__":
 2. **Important:** Do NOT put the script itself in the memory folder. The script will try to eat itself. (Ask me how I know.)
 3. Run: `python scripts/ingest_folder.py`
 
-Once ingestion is complete, move on to [Phase 2.5: The Librarian](03_librarian.md).
+Once ingestion is complete, move on to [Phase 3: The Librarian](03_librarian.md).
