@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from neo4j import GraphDatabase
 import os
+from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("The Brain")
 
@@ -57,4 +58,3 @@ if __name__ == "__main__":
         mcp.run()
     finally:
         driver.close()
-
