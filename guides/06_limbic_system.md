@@ -1,5 +1,5 @@
 
-# Phase 5: The Limbic System
+# Phase 6: The Limbic System
 
 This is the heart of the architecture. You're going to build an emotion graph, a structured space where feelings have measurable dimensions and memories are wired to them.
 
@@ -225,7 +225,7 @@ UNWIND [
 
 MATCH (n)
 WHERE (n:Person OR n:Concept OR n:Topic OR n:File)
-AND toLower(toString(n.id)) CONTAINS mapping.word
+AND (toLower(coalesce(toString(n.content), toString(n.name), toString(n.text), toString(n.title), "")) CONTAINS mapping.word)
 
 MATCH (e:Emotion {name: mapping.emotion})
 MERGE (n)-[r:HAS_AFFECT]->(e)
