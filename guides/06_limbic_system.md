@@ -22,6 +22,19 @@ You should see "Constraint created" or "0 rows."
 
 ---
 
+## Step 1.5: Create the Fulltext Index (Required for Recall)
+
+This creates the search index that lets the Brain actually find things when the AI tries to remember something. Without this, `recall()` will error out.
+```cypher
+CREATE FULLTEXT INDEX contentIndex IF NOT EXISTS
+FOR (n:Memory|File|Person|Concept|Topic)
+ON EACH [n.content, n.name, n.text, n.title, n.path];
+```
+
+You should see "Index created" or "0 rows."
+
+---
+
 ## Step 2: Core Emotions
 
 Pre-load the brain with the primary colors of emotion so the AI doesn't have to invent them from scratch.
