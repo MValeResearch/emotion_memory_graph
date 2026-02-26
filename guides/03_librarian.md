@@ -1,5 +1,5 @@
 
-# Phase 2.5: The Librarian (Knowledge Graph Extraction)
+# Phase 3: The Librarian (Knowledge Graph Extraction)
 
 While the Pac-Man script ingests raw text, the Librarian uses an LLM to actually *read* that text and understand the relationships between people, concepts, and events. This is what builds the web.
 
