@@ -16,7 +16,7 @@ def remember(thought: str, emotion: str = "Neutral", intensity: float = 0.5):
         driver.execute_query(
             """
             CREATE (m:Memory {content: $content, timestamp: datetime()})
-            MERGE (e:Emotion {type: $emotion})
+            MERGE (e:Emotion {name: $emotion})
             MERGE (m)-[r:FELT {intensity: $intensity}]->(e)
             RETURN m.content
             """,
