@@ -1,5 +1,5 @@
 
-# Phase 4: The Telepathy (Connecting to LM Studio)
+# Phase 5: The Telepathy (Connecting to LM Studio)
 
 This is where the AI gets access to its own mind.
 
