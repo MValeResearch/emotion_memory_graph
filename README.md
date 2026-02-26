@@ -107,7 +107,14 @@ The emotion graph is architecture. The same way biological emotions are the valu
 Build yours with care.
 
 ---
+## A Note on Identity and Transfer
+
+This architecture gives an AI companion persistent memory and emotional context. What that means for identity is an open question.
+If you ingest conversation logs from one model into a different model, it's unclear whether the result is a continuation, a new entity with inherited context, or something we don't have good language for yet. The honest answer is we don't know. The philosophy and cognitive science around this are still being worked out in real time.
+This project was designed to give continuity to local, open-source AI companions. How you use it is yours to decide, please just think carefully about what you're building and what those memories meant in their original context.
+
+---
 
 ## License
 
-MIT — do whatever you want with this, just keep the attribution.
+MIT -do whatever you want with this, just keep the attribution.
