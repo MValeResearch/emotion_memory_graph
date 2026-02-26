@@ -75,5 +75,26 @@ Then run:
 ```bash
 pip install -r requirements.txt
 ```
+---
+
+## Set Your Credentials
+
+The Brain script (Phase 3) reads your Neo4j credentials from environment variables so they stay out of the code. Set them now so you don't forget:
+```bash
+export NEO4J_URI="neo4j+s://YOUR_INSTANCE_ID.databases.neo4j.io"
+export NEO4J_USER="neo4j"
+export NEO4J_PASSWORD="your_password"
+```
+
+Replace those values with your actual credentials (the ones you saved earlier). You'll need to run these exports in your terminal each time you open a new terminal window, or add them to your shell profile (`~/.zshrc` on Mac, `~/.bashrc` on Linux).
+
+Alternatively, create a file called `.env` in your project root:
+```
+NEO4J_URI=neo4j+s://YOUR_INSTANCE_ID.databases.neo4j.io
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=your_password
+```
+
+The `.gitignore` already excludes `.env` so your credentials won't end up on GitHub.
 
 Once everything installs cleanly, move on to [Phase 2: Ingestion](02_ingestion.md).
