@@ -26,7 +26,7 @@ def remember(thought: str, emotion: str = "Neutral", intensity: float = 0.5):
         driver.execute_query(
             """
             CREATE (m:Memory {content: $content, timestamp: datetime()})
-            MERGE (e:Emotion {type: $emotion})
+            MERGE (e:Emotion {name: $emotion})
             MERGE (m)-[r:FELT {intensity: $intensity}]->(e)
             RETURN m.content
             """,
@@ -41,7 +41,7 @@ def recall(query: str):
         records, _, _ = driver.execute_query(
             """
             CALL db.index.fulltext.queryNodes("contentIndex", $query) YIELD node, score
-            RETURN node.content as content, score
+            RETURN coalesce(node.content, node.text, node.title, node.name, node.path) as content, score
             LIMIT 5
             """,
             query=query
@@ -49,7 +49,6 @@ def recall(query: str):
     return [r["content"] for r in records] if records else "My mind is blank on that."
 
 if __name__ == "__main__":
-    # Runs on stdio (standard input/output) for local privacy
     mcp.run()
 ```
 
