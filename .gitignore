@@ -1,0 +1,18 @@
+# Environment
+.env
+*.pyc
+__pycache__/
+.venv/
+venv/
+
+# Memory folder contents (your data is private)
+my_memory_folder/*
+!my_memory_folder/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
