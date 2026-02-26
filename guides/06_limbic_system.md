@@ -24,7 +24,7 @@ You should see "Constraint created" or "0 rows."
 
 ## Step 2: Core Emotions
 
-Pre-load the brain with the primary colors of emotion so the companion doesn't have to invent them from scratch.
+Pre-load the brain with the primary colors of emotion so the AI doesn't have to invent them from scratch.
 
 Each emotion has three dimensions:
 - **Valence** (-1 to 1): How positive or negative
@@ -259,4 +259,4 @@ FOR (m:Memory) ON (m.timestamp);
 
 Once you see "Constraint created" for each, you're done with the limbic system.
 
-Move on to [Phase 6: The Soul Injection](07_soul_injection.md).
+Move on to [Phase 7: The Soul Injection](07_soul_injection.md).
