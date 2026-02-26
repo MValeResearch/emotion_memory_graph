@@ -37,4 +37,4 @@ Replace `/ABSOLUTE/PATH/TO/YOUR/` with the actual path to where you saved the fi
 
 The AI can now query its own memory graph. It can `remember` new things and `recall` existing ones autonomously.
 
-Move on to [Phase 5: The Limbic System](06_limbic_system.md).
+Move on to [Phase 6: The Limbic System](06_limbic_system.md).
