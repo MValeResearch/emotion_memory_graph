@@ -1,4 +1,4 @@
-from mcp.server.fastmcp import FastMCP
+pythonfrom mcp.server.fastmcp import FastMCP
 from neo4j import GraphDatabase
 import os
 
@@ -57,3 +57,4 @@ if __name__ == "__main__":
         mcp.run()
     finally:
         driver.close()
+```
