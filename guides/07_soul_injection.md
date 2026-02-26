@@ -1,5 +1,5 @@
 
-# Phase 6: The Soul Injection (System Prompt)
+# Phase 7: The Soul Injection (System Prompt)
 
 This is the identity layer. Copy and paste this into the **System Prompt** field in LM Studio (under Context).
 
