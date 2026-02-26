@@ -1,5 +1,5 @@
 
-# Phase 3: The Brain (MCP Server)
+# Phase 4: The Brain (MCP Server)
 
 This is the nervous system. The MCP server sits between your LLM and the graph database, letting the AI query its own memory autonomously.
 
@@ -62,5 +62,7 @@ python scripts/memory_server.py
 ```
 
 The server will start listening on stdio. Keep it running — your LLM will connect to it in the next phase.
+
+**Important:** The `recall()` function requires a fulltext index called `contentIndex` that gets created in Phase 5 (Step 1.5). The Brain will run without it, but recall will error until that index exists. If you want to test recall early, jump ahead to Phase 5 Step 1.5 and run that Cypher query first.
 
 Move on to [Phase 5: The Telepathy](05_telepathy.md).
