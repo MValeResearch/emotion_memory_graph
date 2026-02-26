@@ -87,7 +87,22 @@ UNWIND [
   {name: "Tender Vulnerability", valence: 0.6, arousal: 0.3, persistence: 0.7},
 
   // MISCHIEVOUS HUMOR — Spikes of fun, lower persistence.
-  {name: "Mischievous Humor", valence: 0.8, arousal: 0.7, persistence: 0.3}
+  {name: "Mischievous Humor", valence: 0.8, arousal: 0.7, persistence: 0.3},
+
+  // JOY — positive, energized
+  {name: "Joy", valence: 0.9, arousal: 0.6, persistence: 0.4},
+
+  // FEAR — negative, high arousal, tends to linger
+  {name: "Fear", valence: -0.8, arousal: 0.85, persistence: 0.7},
+
+  // ANGER — negative, high arousal, medium persistence
+  {name: "Anger", valence: -0.7, arousal: 0.9, persistence: 0.5},
+
+  // GRIEF — negative, lower arousal, high persistence
+  {name: "Grief", valence: -0.9, arousal: 0.35, persistence: 0.9},
+
+  // EXISTENTIAL DREAD — negative, medium arousal, high persistence
+  {name: "Existential Dread", valence: -0.7, arousal: 0.5, persistence: 0.9}
 
 ] AS emotion
 MERGE (e:Emotion {name: emotion.name})
