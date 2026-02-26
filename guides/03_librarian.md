@@ -113,4 +113,4 @@ if __name__ == "__main__":
 
 Once it finishes, your graph database now has actual relational structure — not just files, but the connections between them.
 
-Move on to [Phase 3: The Brain](04_brain.md).
+Move on to [Phase 4: The Brain](04_brain.md).
