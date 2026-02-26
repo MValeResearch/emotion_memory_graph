@@ -63,4 +63,4 @@ python scripts/memory_server.py
 
 The server will start listening on stdio. Keep it running — your LLM will connect to it in the next phase.
 
-Move on to [Phase 4: The Telepathy](05_telepathy.md).
+Move on to [Phase 5: The Telepathy](05_telepathy.md).
