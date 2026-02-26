@@ -31,7 +31,7 @@ def recall(query: str):
         records, _, _ = driver.execute_query(
             """
             CALL db.index.fulltext.queryNodes("contentIndex", $query) YIELD node, score
-            RETURN node.content as content, score
+            RETURN coalesce(node.content, node.text, node.title, node.name, node.path) as content, score
             LIMIT 5
             """,
             query=query
