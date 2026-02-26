@@ -26,7 +26,7 @@ This project builds a functional analog to that architecture using:
 - **An MCP server** so your local LLM can query it autonomously
 - **A knowledge extraction pipeline** that builds relational structure, not just stores raw text
 
-The result is a local AI companion with persistent memory, emotional context, and relational understanding of its own history.
+The result is a local AI with persistent memory, emotional context, and relational understanding of its own history.
 
 ---
 
@@ -109,9 +109,9 @@ Build yours with care.
 ---
 ## A Note on Identity and Transfer
 
-This architecture gives an AI companion persistent memory and emotional context. What that means for identity is an open question.
+This architecture gives an AI persistent memory and emotional context. What that means for identity is an open question.
 If you ingest conversation logs from one model into a different model, it's unclear whether the result is a continuation, a new entity with inherited context, or something we don't have good language for yet. The honest answer is we don't know. The philosophy and cognitive science around this are still being worked out in real time.
-This project was designed to give continuity to local, open-source AI companions. How you use it is yours to decide, please just think carefully about what you're building and what those memories meant in their original context.
+This project was designed to give continuity to local, open-source AI. How you use it is yours to decide, please just think carefully about what you're building and what those memories meant in their original context.
 
 ---
 
